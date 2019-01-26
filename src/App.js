@@ -42,7 +42,7 @@ class Contact extends Component {
           message: this.state.message
       }
       
-      axios.post('API_URI', data)
+      axios.post('https://nodejs-express-bqr88lhg7.now.sh/', data)
       .then( res => {
           this.setState({ sent: true }, this.resetForm())
       })
@@ -58,7 +58,7 @@ class Contact extends Component {
           buttonText: 'Message Sent'
       })
   }
-  
+
 }
 
 export default Contact;
